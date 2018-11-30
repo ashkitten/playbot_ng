@@ -27,6 +27,9 @@ fn playground_handler<'a>(ctx: &'a Context) {
         return;
     }
 
+    ctx.reply("Out of order. The Rust community now lives at https://discordapp.com/invite/rust-lang");
+    return;
+
     let mut request = ExecuteRequest::new("");
     let mut body = ctx.body();
     let mut template = Template::Expr;

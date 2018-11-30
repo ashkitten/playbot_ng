@@ -13,6 +13,9 @@ impl Module for CrateInfo {
 }
 
 fn crate_handler(ctx: &Context, args: &[&str]) {
+    ctx.reply("Out of order. The Rust community now lives at https://discordapp.com/invite/rust-lang");
+    return;
+
     let crate_name = match args.get(0) {
         Some(name) => name,
         None => return,
